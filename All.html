@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Koustubh Dave">
+	
+    <title>All Practicals 3YR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/theme/monokai.min.css">
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        #header {
+            width: 100%;
+            text-align: center;
+        }
+
+        h6 {
+            color: grey;
+            margin: 0;
+        }
+
+        #testCode {
+            background-color: green;
+            font-weight: bolder;
+        }
+
+        .card {
+            background: white;
+            margin: 1rem auto;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+
+        .btn {
+            margin-top: 8px;
+            padding: 8px 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-editor {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            max-width: 90%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .box {
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        #result {
+            height: 300px;
+            border: 1px solid #ddd;
+        }
+
+        iframe {
+            overflow: auto;
+            scrolling: auto;
+        }
+
+        .hidden-answer {
+            display: none;
+        }
+
+        footer {
+            color: grey;
+            text-align: center;
+            font-size: smaller;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <h1>BSC CS HTML Practicals</h1>
+        <h6>Don't thank me just give money!!!</h6>
+        <div><button id="testCode" class="btn viewBtn">Test your code</button>
+            <div class="hidden-answer">
+<!-- Test your code here -->
+            </div>
+        </div>
+    </div>
+
+
+	<div>
+    <div class="card">
+        <h3>1. Write html script using html documents and heading test.</h3>
+        <button class="btn viewBtn">View Answer</button>
+        <div class="hidden-answer">
+<html>
+<body>
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+</body>
+</html>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>2. Write html script using html text formatting tags.</h3>
+        <button class="btn viewBtn">View Answer</button>
+        <div class="hidden-answer">
+<html>
+
+<body>
+<strong>Be Strong</strong><br>
+<i>Be Smart</i><br>
+<b>Be Bold</b><br>
+<abbr>Be Yourself <abbr><br>
+<small>Leave small Thinking</small><br>
+<ins>Who are you?</ins><br>
+<u>Body?</u><br>
+<mark>Mind?</mark><br>
+<del>Energy?</del>E=mc<sup>2</sup>
+</body>
+</html>
+        </div>
+    </div>
+
+ <div class="card">
+        <h3>3. Write html script using html basic tags, limits, Images, button.</h3>
+        <button class="btn viewBtn">View Answer</button>
+        <div class="hidden-answer">
+<html>
+
+<body>
+To get 100K Rs <a href="www.google.com">click here</a>
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.lByZ8Bgcaf74-NNbmfjlJwHaHa%26pid%3DApi%26h%3D160&f=1&ipt=4be1b1f0143e3858982e28da56c71c7f38f63c822df38f30de05b7ab19cf57c4&ipo=images" alt="money image" height="200px" width="200px"><br>
+<button onclick="alert('Paisa hi paisa!!!')">Get Money</button><br>
+<input type="number" min="0" max="5" value="Rating" placeholder="Rating 1-5">
+</body>
+</html>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>4. Write html script using html for all html input type.</h3>
+        <button class="btn viewBtn">View Answer</button>
+        <div class="hidden-answer">
+<html>
+<body>
+Button:<input type="button" value="Button"><br>
+checkbox: <input type="checkbox"><br>
+Color: <input type="color"><br>
+Date: <input type="date"><br>
+DateTime: <input type="datetime-local"><br>
+Email: <input type="email"><br>
+File: <input type="file"><br>
+Hidden: <input type="hidden"><br>
+Image: <input type="image"><br>
+Month: <input type="month"><br>
+Number: <input type="number"><br>
+Password: <input type="password"><br>
+Radio: <input type="radio"><br>
+Range: <input type="range"><br>
+Reset: <input type="reset"><br>
+Search: <input type="search"><br>
+Submit: <input type="submit"><br>
+Tel: <input type="tel"><br>
+Text: <input type="text"><br>
+Time: <input type="time"><br>
+URL: <input type="url"><br>
+Week: <input type="week"><br>
+</body>
+</html>
+
+         </div>
+	</div>
+
+    <div class="card">
+        <h3>5. Write html script using html to design audio and video gallery.</h3>
+        <button class="btn viewBtn">View Answer</button>
+        <div class="hidden-answer">
+<body>
+<audio controls>
+	<source src="link.mp3" type="audio/mp3">
+</audio>
+<video height="300px" width="300px" controls>
+	<source src="link.mp3" type="video/mp4">
+</video>
+</body>
+
+         </div>
+	</div>
+
+
+    <div class="card">
+        <h3>6. Write html script using html to create all type list.</h3>
+        <button class="btn viewBtn">View Answer</button>
+        <div class="hidden-answer">
+<html>
+
+<body>
+<h1>Lists</h1>
+<h3>Order List</h3>
+<ol>
+	<li>BSC</li>
+	<li>MSC</li>
+	<li>BCA</li>
+</ol>
+<h3>Unorder List</h3>
+<ul>
+	<li>BSC</li>
+	<li>MSC</li>
+	<li>BCA</li>
+</ul>
+<h3>Description List</h3>
+<dl>
+	<dt>BSC</dt>
+	<dd>Bachelor of Science</dd>
+	<dt>MSC</dt>
+	<dd>Master of Science</dd>
+	<dt>BCA</dt>
+	<dd>Bachelor of Computer Application</dd>
+</dl>
+</body>
+</html>
+         </div>
+	</div>
+
+
+    <div class="card">
+        <h3>7. Write html script using html create html table.</h3>
+        <button class="btn viewBtn">View Answer</button>
+        <div class="hidden-answer">
+<html>
+<body>
+<table border="1" cellspacing="0" cellpadding="3">
+	<tr>
+		<th>Name</th>
+		<th>Age</th>
+		<th>Course</th>
+	</tr>
+	<tr>
+		<td>Koustubh</td>
+		<td>Secret</td>
+		<td>BSC</td>
+	</tr>
+	<tr>
+		<td>You</td>
+		<td>I know</td>
+		<td>BSC</td>
+	</tr>
+</table>
+</body>
+</html>
+         </div>
+	</div>
+
+
+    <div class="card">
+        <h3>8. Create an html table using Rowspan and Colspan.</h3>
+        <button class="btn viewBtn">View Answer</button>
+        <div class="hidden-answer">
+<!Doctype html>
+<html>
+<head>
+	<title>Complex Table</title>
+</head>
+<body>
+<h2>Time Table For Seminar</h2>
+<table border="1" cellpadding="5" cellspacing="0">
+	<tr>
+		<th rowspan="3">Day</th>
+		<th colspan="3">Seminar</th>
+	</tr>
+	<tr>
+		<th colspan="2">Schedule</th>
+		<th rowspan="2">Topic</th>
+	</tr>
+	<tr>
+		<th>Begin</th>
+		<th>End</th>
+	</tr>
+	<tr>
+		<td rowspan="2">Monday</td>
+		<td rowspan="2">8:00 AM</td>
+		<td rowspan="2">5:00 PM</td>
+		<td>XML</td>
+	</tr>
+	<tr>
+		<td>DTD</td>
+	</tr>
+	<tr>
+		<td rowspan="3">Tuesday</td>
+		<td>8:00 AM</td>
+		<td>11:00 AM</td>
+		<td>XSL Path</td>
+	</tr>
+	<tr>
+		<td>11:00 AM</td>
+		<td>2:00 PM</td>
+		<td rowspan="2">DBMS</td>
+	</tr>
+	<tr>
+		<td>2:00 PM</td>
+		<td>5:00 PM</td>
+	</tr>
+	<tr>
+		<td>Wednesday</td>
+		<td>8:00 AM</td>
+	<td>12:00 PM</td>
+	<td>XSL Objects</td>
+</tr>
+</table>
+</body>
+</html>
+         </div>
+	</div>
+
+
+    <div class="card">
+        <h3>9. Create registration form using html table tag and for necessary input type tag.</h3>
+        <button class="btn viewBtn">View Answer</button>
+        <div class="hidden-answer">
+<!Doctype html>
+<html>
+<head>
+	<title>Registration Form</title>
+</head>
+<body>
+<h2>Registration Form</h2>
+<form>
+	<table border="1" cellpadding="4" cellspacing="0">
+		<tr>
+			<td>
+				<label>Name </label><input type="text" placeholder="Enter Name">
+			</td>
+			<td colspan="2">
+				<label>Father Name </label><input type="text" placeholder="Enter Father Name">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Mother Name </label><input type="text" placeholder="Enter Mother Name">
+			</td>
+			<td colspan="2">
+				<label>Phone no. </label><input type="number" placeholder="+91">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Gender</label><input type="radio"><label>Male</label><input
+					type="radio"><label>Female</label>
+			</td>
+			<td>
+				<label>Email ID </label><input type="email" placeholder="example@gmail.com">
+			</td>
+			<td>
+				<label>DOB </label><input type="date">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>State </label>
+				<select>
+					<option>Select</option>
+				</select>
+			</td>
+			<td>
+				<label>District </label>
+				<select>
+					<option>Select</option>
+				</select>
+			</td>
+			<td>
+				<label>City </label>
+				<select>
+					<option>Select</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<label>Address </label><textarea rows="3" cols="15"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Course Name </label>
+				<select>
+					<option>Select</option>
+				</select>
+			</td>
+			<td colspan="2">
+				<label>Department </label>
+				<select>
+					<option>Select</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<label>Select Subject </label><input type="checkbox">Sub1<br>
+				<input type="checkbox">Sub2<br>
+				<input type="checkbox">Sub3<br>
+				<input type="checkbox">Sub4<br>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<label>DOJ </label><input type="datetime">
+			</td>
+			<td>
+				<label>Fees </label><input type="number" placeholder="Enter fee">
+			</td>
+		</tr>
+		<tr align="right">
+			<td colspan="3">
+				<label>Student Signature </label><textarea rows="4" cols="18"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3" align="center">
+				<input type="submit" value="Submit"><input type="button" value="Cancel"><input
+					type="reset" value="Reset">
+			</td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
+         </div>
+	</div>
+
+    <div class="card">
+        <h3>10. Create iframes using html.</h3>
+        <button class="btn viewBtn">View Answer</button>
+        <div class="hidden-answer">
+<!Doctype html>
+<html>
+<head>
+	<title>Iframe site</title>
+</head>
+<body>
+	<h3>Framing Different Site And Doc.</h3>
+	<iframe src="https://www.google.com/"></iframe>
+</body>
+</html>
+         </div>
+	</div>
+
+
+
+    <div class="card">
+        <h3>11. Write html script using Nested list with different kind of number form.</h3>
+        <button class="btn viewBtn">View Answer</button>
+        <div class="hidden-answer">
+
+<!Doctype html>
+<html>
+<head>
+	<title>Nested Lists</title>
+</head>
+<body>
+<h2>Courses</h2>
+<ul>
+	<li>BSC</li>
+	<ol type="I">
+		<li>Computer Science</li>
+		<ol>
+			<li>Multimedia</li>
+			<ol type="A">
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>JS</li>
+				<li>PHP</li>
+			</ol>
+			<li>DBMS</li>
+		</ol>
+		<li>Physics</li>
+		<ol>
+			<li>Optics</li>
+			<li>Electronics</li>
+		</ol>
+		<li>Maths</li>
+		<ol>
+			<li>Trignometry</li>
+			<li>Probability</li>
+		</ol>
+		<li>Biology</li>
+	</ol>
+	<li>BCA</li>
+	<li>BCOM</li>
+</ul>
+</body>
+</html>
+         </div>
+	</div>
+
+
+
+    <div class="card">
+        <h3>12.(i) Write html script using Scrolling image with Marquee tag.</h3>
+        <button class="btn viewBtn">View Answer</button>
+        <div class="hidden-answer">
+<!Doctype html>
+<html>
+<head>
+	<title>Image Scroll</title>
+</head>
+<body>
+<h2>Marquee: Image Scroll</h2>
+<marquee>
+	<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.IfVB5i-f39-uoUmGasjdsQHaET%26pid%3DApi&f=1&ipt=a86af76e2b2c51c30dfa9c0e1491cfe5ecd3cb6dde37dce54b6feeba5e03c8d3&ipo=images" height="200px" width="200px">
+</marquee>
+</body>
+</html>
+         </div>
+	</div>
+
+
+
+    <div class="card">
+        <h3>12.(ii) Write html script using Moving image back and forth using the behavior attribute.</h3>
+        <button class="btn viewBtn">View Answer</button>
+        <div class="hidden-answer">
+<!Doctype html>
+<html>
+<head>
+	<title>Move Back & Forth</title>
+</head>
+<body>
+<h2>Marquee: Move Back&Forth</h2>
+<marquee behavior="alternate">
+	<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.IfVB5i-f39-uoUmGasjdsQHaET%26pid%3DApi&f=1&ipt=a86af76e2b2c51c30dfa9c0e1491cfe5ecd3cb6dde37dce54b6feeba5e03c8d3&ipo=images" height="200px" width="200px">
+</marquee>
+</body>
+</html>
+         </div>
+	</div>
+
+
+    <div class="card">
+        <h3>12.(iii) Write html script using Create moving image(GIF).</h3>
+        <button class="btn viewBtn">View Answer</button>
+        <div class="hidden-answer">
+<!Doctype html>
+<html>
+<head>
+	<title>Moving Image</title>
+</head>
+<body>
+<h2>Moving Image: GIF</h2>
+<img src="https://media.giphy.com/media/0nl1a9rt1Ep2dIbQJD/giphy.gif?cid=790b7611zjp8163p39pht243r5ptfmsknire7n6a7b6oqb8c&ep=v1_gifs_search&rid=giphy.gif&ct=g" height="200px" width="200px">
+</body>
+</html>
+         </div>
+	</div>
+
+    <div class="card">
+        <h3>12.(iv) Write html script using Create floating image.</h3>
+        <button class="btn viewBtn">View Answer</button>
+        <div class="hidden-answer">
+<!Doctype html>
+<html>
+<head>
+	<title>Floating Image</title>
+</head>
+<body>
+<h2>Floating Image</h2>
+<p>hello. How are you? I know there is no body to think about you, but I am. Contact me and give
+						me 100,000,000Rs I will think of you. Thank you!!!</p>
+
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.IfVB5i-f39-uoUmGasjdsQHaET%26pid%3DApi&f=1&ipt=a86af76e2b2c51c30dfa9c0e1491cfe5ecd3cb6dde37dce54b6feeba5e03c8d3&ipo=images" style="float: right; height: 200px;">
+
+</body>
+</html>
+
+         </div>
+	</div>
+
+
+    <div class="card">
+        <h3>14. Create a table using inline CSS.</h3>
+        <button class="btn viewBtn">View Answer</button>
+        <div class="hidden-answer">
+<html>
+<body>
+<div style="height: 640px; width: 1355px; background-image: linear-gradient(to right, #E6B0AA, #F9EBEA); position: fixed;">
+    <table cellspacing="0" align="center" style="text-align: center; color: #fff; margin-top: 100px; height: 400px; width: auto;">
+        <th colspan="3">
+            <h1 style="font-weight: bolder; font-size: 43px;">Creative Pricing Table</h1>
+        </th>
+        <tr>
+            <td style="padding: 20px; background-color: #EBDEF0; color: green; font-size: 17px; font-family: arial; font-weight: bold; justify: center;">$26<br>
+                <label style="color: black; font-size: 8px;">per month</label>
+            </td>
+            <td style="padding: 20px; background-color: #FFF; color: #7741c6; font-size: 17px; font-family: arial; font-weight: bold; justify: center;">$30<br>
+                <label style="color: black; font-size: 8px;">per month</label>
+            </td>
+            <td style="padding: 20px; background-color: #fbdbe3; color: #f16d38; font-size: 17px; font-family: arial; font-weight: bold; justify: center;">$35<br>
+                <label style="color: black; font-size: 8px;">per month</label>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: #92f39f; color: #fff; line-height: 22.5px; font-size: 16px; font-family: arial; padding: 5px; font-weight: bolder; text-align: center;">BASIC<br>
+                <ul style="list-style-type: disc; text-align: left;">
+                    <li>web page</li>
+                    <li>html code</li>
+                    <li>java script</li>
+                    <li>css three types</li>
+                </ul>
+            </td>
+            <td style="background-color: #a54dda; color: #fff; line-height: 22.5px; font-size: 16px; font-family: arial; padding: 5px; font-weight: bolder; text-align: center;">PREMIUM<br>
+                <ul style="list-style-type: square; text-align: left;">
+                    <li>web page</li>
+                    <li>html code</li>
+                    <li>java script</li>
+                    <li>css three types</li>
+                </ul>
+            </td>
+            <td style="background-color: #f56494; color: #fff; line-height: 22.5px; font-size: 16px; font-family: arial; padding: 5px; font-weight: bolder; text-align: center;">ULTIMATE<br>
+                <ul style="list-style-type: circle; text-align: left;">
+                    <li>web page</li>
+                    <li>html code</li>
+                    <li>java script</li>
+                    <li>css three types</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: #92f39f;">
+                <button style="background-color: #fff; color: #239984; padding: 8px; border-color: #fff; border-radius: 20px; width: 150px; font-weight: bolder;">CHOOSE</button>
+            </td>
+            <td style="background-color: #a54dda;">
+                <button style="background-color: #fff; color: #a54dda; padding: 8px; border-color: #fff; border-radius: 20px; width: 150px; font-weight: bolder;">CHOOSE</button>
+            </td>
+            <td style="background-color: #f56494;">
+                <button style="background-color: #fff; color: #f56494; padding: 8px; border-color: #fff; border-radius: 20px; width: 150px; font-weight: bolder;">CHOOSE</button>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
+
+         </div>
+	</div>
+
+
+<div class="card">
+        <h3>15.  Design a simple registration form using internal css, div, span</h3>
+        <button class="btn viewBtn">View Answer</button>
+        <div class="hidden-answer">
+<html>
+<head>
+<title>Registration form using internal CSS</title>
+
+<style>
+    .bg {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to right, blue, violet);
+        position: fixed;
+    }
+    .mainDiv {
+        background-color: whitesmoke;
+        width: 50%;
+        border-radius: 10px;
+        margin-top: 180px;
+        margin-left: 350px;
+        padding: 20px;
+        line-height: 30px;
+    }
+    .containerDiv {
+        columns: 2;
+        line-height: 28px;;
+    }
+    #regBtn {
+        background-image: linear-gradient(to right, blue, violet);
+        width: 80%;
+        color: white;
+        font-weight: bold;
+        padding: 15px;
+        border-radius: 10px;
+        margin-left: 80px;
+    }
+</style>
+</head>
+<body>
+<div class="bg">
+    <div class="mainDiv">
+        <h3>Registration</h3>
+        <div class="containerDIv">
+            <label>Full Name</label><br>
+            <input type="text" placeholder="Enter name"><br>
+            <label>Email</label><br>
+            <input type="email" placeholder="Enter E-mail"><br>
+            <label>Password</label><br>
+            <input type="password" placeholder="Enter password"><br>
+            <label>Username</label><br>
+            <input type="text" placeholder="Enter user-name"><br>
+            <label>Phone no.</label><br>
+            <input type="number" placeholder="Enter no."><br>
+            <label>Confirm Password</label><br>
+            <input type="password" placeholder="Confirm password"><br>
+        </div>
+        <label>Gender</label><br>
+        <input type="radio" ><label>Male</label><input type="radio"><label>Female</label><input type="radio"><label>Prefer not to say</label><br>
+        <button id="regBtn">Register</button>
+    </div>
+</div>
+</body>
+</html>
+
+         </div>
+	</div>
+
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay" style="display: none;">
+        <div class="main-editor">
+            <button id="closeOverlay" class="btn">Close</button>
+            <button id="runBtn" class="btn">Run</button>
+            <textarea id="editor" class="box"></textarea>
+            <iframe id="result" class="box"></iframe>
+        </div>
+    </div>
+
+
+    <footer>
+        By Koustubh Thank me and give money!!!
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/xml/xml.min.js"></script>
+    <script>
+        // Initialize Overlay Elements
+        const overlay = document.getElementById("overlay");
+        const closeOverlay = document.getElementById("closeOverlay");
+        const runBtn = document.getElementById("runBtn");
+        const iframe = document.getElementById("result");
+
+        // DOM loaded
+        document.addEventListener("DOMContentLoaded", (event) => {
+            event.preventDefault();
+        });
+
+        // Initialize CodeMirror
+        const editor = CodeMirror.fromTextArea(document.getElementById('editor'), {
+            mode: "text/html",
+            theme: "monokai",
+            lineNumbers: true
+        });
+
+        // Add Event Listeners to View Buttons
+        const viewBtns = document.querySelectorAll(".viewBtn");
+        viewBtns.forEach((btn, index) => {
+            btn.addEventListener("click", () => {
+                const answer = btn.nextElementSibling.innerHTML;
+                editor.setValue(answer); // Populate editor with hidden answer
+                overlay.style.display = "flex";
+
+                
+                
+                // data load in iframe
+                const htmlContent = editor.getValue(); // Get editor content
+
+			    // Render in iframe
+			    iframe.srcdoc = htmlContent; // Use srcdoc for modern browsers
+
+			    // Fallback for older browsers
+			    const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+			    iframeDoc.open();
+			    iframeDoc.write(htmlContent);
+			    iframeDoc.close();
+            });
+        });
+
+        // Run Button Event Listener
+        runBtn.addEventListener("click", () => {
+			const htmlContent = editor.getValue(); // Get editor content
+
+			// Render in iframe
+			iframe.srcdoc = htmlContent; // Use srcdoc for modern browsers
+
+			// Fallback for older browsers
+			const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+			iframeDoc.open();
+			iframeDoc.write(htmlContent);
+			iframeDoc.close();
+		});
+
+
+        // Close Overlay
+        closeOverlay.addEventListener("click", () => {
+            overlay.style.display = "none";
+        });
+    </script>
+</body>
+</html>
