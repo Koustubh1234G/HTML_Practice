@@ -102,7 +102,7 @@
 
     <div id="header">
         <h1>BSC CS HTML Practicals</h1>
-        <h6>Don't thank me just give money!!!</h6>
+        <h6>Give money to Benefector!!!</h6>
         <div><button id="testCode" class="btn viewBtn">Test your code</button>
             <div class="hidden-answer">
 <!-- Test your code here -->
@@ -739,6 +739,125 @@ Week: <input type="week"><br>
 
          </div>
 	</div>
+	
+	<div class="card">
+        <h3>16.Calculate area and perimeter of circle using JavaScript.</h3>
+        <button class="btn viewBtn">View Answer</button>
+        <div class="hidden-answer">
+<html>
+<head>
+<script>
+	let PI = 3.14;
+	function calculate() {
+		var radius = document.circle.r.value;
+		
+		let area = PI * radius * radius;
+		document.circle.ar.value = area;
+		
+		let perimeter = 2 * PI * radius;
+		document.circle.pr.value = perimeter;
+	}
+</script>
+</head>
+<body>
+<form name="circle">
+	<table border="1" cellpadding="6" cellspacing="0" align="center">
+		<tr>
+			<td><label>Enter radius</label></td>
+			<td><input type="number" name="r" /></td>
+		</tr>
+		<tr>
+			<td><label>Area</label></td>
+			<td><input type="number" name="ar" /></td>
+		</tr>
+		<tr>
+			<td><label>Pimeter</label></td>
+			<td><input type="number" name="pr" /></td>
+		</tr>
+		<tr>
+			<td colspan="2"><button type="button" onclick="calculate()">Calculate</button></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
+
+        </div>
+	</div>
+
+	<div class="card">
+        <h3>17.Design a Calc using JavaScript.</h3>
+        <button class="btn viewBtn">View Answer</button>
+        <div class="hidden-answer">
+<html>
+<head>
+<script>	
+	function add() {
+		let x = document.calc.x.value;
+		let y = document.calc.y.value;
+		
+		document.calc.z.value = parseInt(x) + parseInt(y);
+	}
+	
+	function sub() {
+		let x = document.calc.x.value;
+		let y = document.calc.y.value;
+		
+		document.calc.z.value = parseInt(x) - parseInt(y);
+	}
+	
+	function mul() {
+		let x = document.calc.x.value;
+		let y = document.calc.y.value;
+		
+		document.calc.z.value = parseInt(x) * parseInt(y);
+	}
+	
+	function div() {
+		let x = document.calc.x.value;
+		let y = document.calc.y.value;
+		
+		document.calc.z.value = parseInt(x) / parseInt(y);
+	}
+</script>
+</head>
+<body>
+<form name="calc">
+	<table border="1" cellspacing="0" cellpadding="6" align="center">
+		<tr>
+			<th colspan="2">Simple Calculator</th>
+		</tr>
+		<tr>
+			<td>Enter first no.</td>
+			<td><input type="number" name="x" /></td>
+		</tr>
+		<tr>
+			<td>Enter second no.</td>
+			<td><input type="number" name="y" /></td>
+		</tr>
+		<tr>
+			<td>Result</td>
+			<td><input type="number" name="z" /></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<button type="button" onclick="add()">Add</button>
+				<button type="button" onclick="sub()">Sub</button>
+				<button type="button" onclick="mul()">Mul</button>
+				<button type="button" onclick="div()">Div</button>
+			</td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
+
+        </div>
+	</div>
+
+	
+	
+	
 
     </div>
 
